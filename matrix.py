@@ -1,3 +1,16 @@
+import math
+
+
+def f_activate(X):
+    for i in range(len(X)):
+        X[i][0] = sigma(X[i][0])
+    return X
+
+
+def sigma(x):
+    return 1 / (1 + math.exp(-x))
+
+
 def sumMatrix(A, B):
     C = []
     for i in range(len(A)):
